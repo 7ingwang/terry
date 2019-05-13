@@ -1,0 +1,74 @@
+html, body, section, div, h1, h2, h3, h4, p, ul, li{ margin: 0; padding: 0;}
+body{ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; line-height: 2;}
+
+svg{ display: none; position: absolute;}
+
+section{ position: relative; padding: 0 0 5vh; width: 100vw; min-height: 100vh; background-color: #fff; overflow: hidden; }
+section.blue{ background-color: #1A86E0;}
+section.white{ background-color: #fff;}
+section.grey{ background-color: #DFE6E9;}
+section.dark{ background-color: #3D435B;}
+section .con{ display: flex; flex-flow: column; justify-content: space-around; text-align: center;}
+section h1, section h2{ display: block; text-indent: -9999px; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+section h2{ margin-bottom: 20px; height: 38px; }
+
+#landing{ z-index: 0;}
+#landing .con{ padding-top: 10vh; color: #fff; }
+#avatar{ box-shadow: 10px 10px 0 0 rgba(0,0,0,0.15);}
+#about .text{ margin: 20px 0;}
+#about .text h1{ margin-bottom: 20px; height: 128px; background-image: url(../svg/name.svg);}
+#about .text h3 span{ display: block;}
+#about .text p{ margin-top: 40px;}
+
+#objective{ margin-top: 20px;}
+#objective h2{ background-image: url(../svg/objective.svg);}
+
+#feature{ z-index: 100;}
+#feature .con{ padding-top: 40px; text-align: left;}
+#feature .con svg{ right: -60px;}
+#feature h2{ background-image: url(../svg/feature.svg);}
+#feature ul{ padding: 20px;}
+
+#experience{ z-index: 200;}
+
+#how{ z-index: 300;}
+
+#works{ z-index: 400;}
+
+#contact{ z-index: 500;}
+
+.icon{ display: inline-block; width: 60px; height: 60px; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+.icon-menu{ background-image: url(../svg/menu.svg);}
+
+.svgbox{ }
+
+#menu{ position: fixed; right: 20px; top: 20px; z-index: 1000; }
+
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+svg{ display: block;}
+section .con{ /* position: fixed; left: 0; right: 0; top: 0;  */margin: auto; width: 800px;}
+section h2{ height: 56px;}	
+
+#landing .con{ padding-top: 20vh;  text-align: left;}
+#landing .con svg{ top: 60vh;}
+#about{ position: relative; }
+#avatar{ position: absolute; left: 30px;}
+#about .text, #objective{ padding-left: 370px;}
+#about .text{ position: relative;}
+section h1, section h2{ background-position: left center;}
+#about .text .name{ height: 162px;}
+#about .text h3{ position: absolute; top: 76px; left: 600px; line-height: 50px; font-size: 30px;}
+#about .text h3 span{ font-weight: 300; font-size: 22px;}
+
+#objective{ margin-top: 60px;}
+
+}
+@media (min-width: 1200px) {
+
+}

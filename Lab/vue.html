@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<title>Vue Study</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<!-- 完整语法缩写 -->
+
+	<!-- <a v-bind:href="url">...</a> -->
+	<!-- <a :href="url">...</a> -->
+
+	<!-- <a v-on:click="doSomething">...</a> -->
+	<!-- <a @click="doSomething">...</a> -->
+
+
+
+
+	<div id="app">
+		<header>
+			<h1 :title="message" v-if="show">{{ message }}</h1>
+			<h2 v-if="ok">yes</h2>
+			<h2 v-else>no</h2>
+			<h3 v-show="isShow">1 + {{ counter }} = {{ counter+1 }}<button v-on:click="counter += 1">Add 1</button></h3>
+
+		</header>
+
+		<ul>
+			<li v-for="item in items" :class="[itemClass, activeClass]">{{ item.message }}</li>
+		</ul>
+
+		<section>
+			<h2>{{ about }}</h2>
+			<button @click="popup">{{ message }}</button>
+		</section>
+
+		<button v-on:click="sayHello">say Hello</button>
+
+
+
+		<footer>
+			{{ message2 }}
+		</footer>
+
+	</div>
+
+	<div id="example-1">
+	  <button @click="show = !show">Toggle show</button>
+	  <transition name="bounce">
+	    <p v-if="show">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis enim libero, at lacinia diam fermentum id. Pellentesque habitant morbi tristique senectus et netus.</p>
+	  </transition>
+	</div>
+
+	<script>
+	var app = new Vue({
+
+		el: '#app',
+		data:{
+			message: 'Hello Vue!',
+			message2: '页面加载于：' + new Date().toLocaleString(),
+			about: "About us",
+			show: true,
+			items: [
+					{ message: "home" },
+					{ message: "avout" },
+					{ message: "contact" }
+			],
+			itemClass: "item",
+			activeClass: "active",
+			ok: false,
+			else: true,
+			isShow: true,
+
+			counter: 0,
+
+			name: "World",
+
+
+		},
+		methods:{
+			popup: function(){
+				this.show = false
+			},
+
+			sayHello: function(event) {
+				alert("Hello" + name + "!")
+			}
+		},
+
+	})
+
+	</script>
+	<script>
+		new Vue({
+			el: '#example-1',
+			data: {
+				show: true
+			}
+		})
+	</script>
+
+	<style>
+		.bounce-enter-active {
+		  animation: bounce-in .5s;
+		}
+		.bounce-leave-active {
+		  animation: bounce-in .5s reverse;
+		}
+		@keyframes bounce-in {
+		  0% {
+		    transform: scale(0);
+		  }
+		  50% {
+		    transform: scale(1.5);
+		  }
+		  100% {
+		    transform: scale(1);
+		  }
+		}
+	<style>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<title>HTML/CSS/JS 实验室</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>header</header>
+
+<div class="loading">
+	<div class="fill"></div>
+</div>
+
+<div class="collapse">
+	<button>折叠</button>
+	<div class="collapse-content">这里是折叠内容……</div>
+</div>
+
+<div class="block">
+	<i class="icon rotate-1"></i>
+	<i class="icon rotate-2 delay"></i>
+	<i class="icon rotate-3dx"></i>
+	<i class="icon rotate-3dy"></i>
+</div>
+
+<div class="row">
+	<div class="column">left</div>
+	<div class="column">center</div>
+	<div class="column">right</div>
+</div>
+
+<div class="flow">
+	<a  href="#" class="box"><img src="img/400066284.jpg" alt=""></a>
+	<a  href="#" class="box"><img src="img/400916678.png" alt=""></a>
+	<a  href="#" class="box"><img src="img/400284635.jpg" alt=""></a>
+	<a  href="#" class="box"><img src="img/400081902.jpg" alt=""></a>
+	<a  href="#" class="box"><img src="img/400228807_banner.jpg" alt=""></a>
+	<a  href="#" class="box"><img src="img/500629845.jpg" alt=""></a>
+	<a  href="#" class="box"><img src="img/0057a4bf49c7175.jpg" alt=""></a>
+	<a  href="#" class="box"><img src="img/400886674.png" alt=""></a>
+</div>
+
+ 
+<div class="flex">
+	<div class="box">left</div>
+	<div class="box">center</div>
+	<div class="box">right</div>
+</div>
+
+<p>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为: 0 1 auto</p>
+<p class="column-count">经济日报北京12月6日讯 记者冯其予报道：商务部新闻发言人高峰在6日举行的例行发布会上表示，今年以来，我国进出口实现较快增长，稳中向好势头进一步巩固，这主要得益于多种因素共同带动的结果。随着市场多元化加快，进口潜力逐步释放等，明年外贸发展仍具备有力支撑。
+
+“对于明年的外贸形势，我国外贸发展仍然具备有力支撑。”高峰说，从内部看，随着我国外贸领域供给侧结构性改革深入推进，我国进出口结构将进一步优化，高质量创新发展动能将进一步积蓄，进口潜力将进一步激发；从外部看，虽然外部环境面临保护主义、单边主义等不确定不稳定因素的挑战，但经济全球化的大趋势没有改变，全球主要市场的需求仍在增长。
+
+针对有观点认为外贸取得这样的成绩与“抢出口”有关，高峰表示，这可能存在于个别受贸易保护主义、单边主义影响的出口市场。从总体上看，这种现象不是今年我国进出口实现较快增长的决定性因素。
+
+高峰说，从趋势上可以看出，我国外贸市场多元化步伐正在加快，个别市场波动对整体外贸发展的趋势影响有限，特别是我国进口潜力正在逐步释放。明年我国外贸高质量发展的步伐将继续加快，仍然具备有力支撑。
+
+高峰说，商务部将密切关注外贸形势的变化，对于国际上可能出现的不确定不稳定因素以及我国企业可能面临的一些困难，将继续通过深化“放管服”改革、进一步提高贸易便利化水平、降低进出口企业成本、大力培育贸易新业态、推进市场多元化等措施，推动我国外贸高质量发展。</p>
+
+<button class="toast">点击打开提示层，提示后自动消失</button>
+<div class="hide" id="success">操作成功</div>
+
+
+
+<footer>footer</footer>
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".toast").click(function(){
+            $("#success").show().delay(3000).hide(300);
+        });
+    })
+</script>  
+</body>
+</html>

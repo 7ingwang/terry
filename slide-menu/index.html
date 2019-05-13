@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Slide Menu</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+<style>
+	.navigation.open .mask{ position: fixed; left: 0; right: 0; top:0; bottom: 0; width: 100vw; height: 100vh; background: #000; opacity: .5; z-index: 0;}
+</style>
+  
+<header class="header-main">
+  <h1 class="text-center">Slide Menu</h1>
+  <nav class="navigation">
+    <div class="hamburger">
+      <span class="bars"></span>
+    </div>
+    <div class="menu">
+    <ul>
+      <li><a href="">Link</a></li>
+      <li class="sub-menu"><a href="">Link</a></li>
+      <li><a href="">Link</a></li>
+      <li><a href="">Link</a></li>
+      <li><a href="">Link</a></li>
+      <li><a href="">Link</a>
+      	<ul>
+	      	<li><a href="">Link</a></li>
+	      	<li><a href="">Link</a></li>
+	      	<li><a href="">Link</a></li>
+	      	<li><a href="">Link</a></li>
+      	</ul>
+      </li>
+    </ul>
+  
+    </div>
+    <div class="mask"></div>
+  </nav>
+  
+</header>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+
+  
+<script>
+jQuery(function($){
+    $(".hamburger, .mask").click(function()
+    {
+        $(".navigation").toggleClass("open");
+        
+    }); 
+});
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<title>Javascript</title>
+<script>
+
+	var a = 12;
+	var b = 24;
+	var x = "Hello ";
+	var y = "World ";
+
+	document.write(x+y,a+b);
+
+	// alert(" 吃了么 ");
+
+////////////
+	var myName = "Terry"
+	console.log("Hi " + myName);
+
+
+	var myTable = [
+		{
+			name: "Terry",
+			sex: "man",
+			age: "36",
+		},
+		{
+			name: "Ti",
+			sex: "female",
+			age: "35",
+		},
+	]
+	console.table(myTable);
+
+
+////////
+function age() {
+	var people = "Alex"
+	var years = "18"
+	console.log("%s is %d years old.",people,years)
+}
+age()
+
+//////////
+function getCost(price,tax){
+	var cost = price + tax
+	console.log("$" + cost)
+}
+getCost(100,2)
+
+var loster = getCost(30,1.50)
+var steak = getCost(25,1.25)
+var sandwich = getCost(5,0.25)
+console.log(loster);
+
+////////////
+var list =[1, 12, 333]
+list.forEach(function(value){
+	console.log(value)
+})
+
+////////////
+var lrnRules = function(x){
+	console.log("I <3 " + x)
+}
+lrnRules("terryxxx")
+
+//////////
+var raining = true
+if (raining) {
+	console.log("Staying in!")
+} else {
+	console.log("Outdoors!")
+}
+
+////////////
+var happyHour = true
+if ("happyHour"){
+	console.log("Beer!");
+}
+
+var energized = false
+if(energized){
+	console.log("Chipper!")
+} else {
+	console.log("Recharge!")
+}
+
+///////////
+var time = 12
+if(time < 10){
+	console.log("Good morning")
+} else if ( time <20) {
+	console.log("Good day")
+} else {
+	console.log("Good evening")
+}
+
+////////
+var raining = false
+var time = 10
+if (time < 20 || raining){
+	console.log("Watch TV")
+} else {
+	console.log("Play robo-ball")
+}
+
+/////////
+var awake = false
+if (!awake) {
+	console.log("Wake up!");
+} else {
+	console.log("Morning!");
+}
+
+
+// true & false表示true 与 false，结果为false
+if (false && true) {
+	console.log("Unreachable!");
+} else {
+	console.log("Cha Ching!");
+}
+
+// true & true表示true 与 true，结果为true
+if (true && true) {
+	console.log("Unreachable!");
+} else {
+	console.log("Cha Ching!");
+}
+
+////////
+
+var elderly = true
+var age = elderly ? 80 : 30
+console.log(age);
+
+////////////
+var code = true
+if (code) {
+	console.log("Coding is fun");
+}
+
+// Loops
+for (var i = 0; i < 3; i++) {
+	console.log(i);
+}
+
+for (var i = 1; i < 10; i = i + 2) {
+	console.log(i);
+}
+
+for (var i = 0; i > -10; i--) {
+	console.log(i);
+}
+
+var i = 0
+while (i<10) {
+	console.log(i)
+	i++
+}
+
+var awake = true
+while (awake) {
+	console.log("Hello, world")
+	awake = false
+}
+
+var time = 8
+var awake = true
+while (awake) {
+	if (time === 11) {
+		console.log(time)
+		awake = false
+	}
+	time++
+}
+
+var condition = false
+do {
+	console.log("Run once!")
+} while (condition)
+
+var total = 0
+for ( var i = 1; i < 5; i++){
+	if (total == 3) {
+		break
+	}
+	total = total + i
+}
+console.log(total);
+
+
+// Arrays
+var list = ["steak", "eggs"]
+console.log(list[0]);
+
+var list = ["steak", "eggs", "bird"]
+var total = list.length
+console.log(total);
+
+var x = ["steak", "eggs"]
+for(var i=0; i < x.length; i++){
+	console.log(x[i]);
+}
+
+var numbers = [,]
+for (var i = 0; i < 9; i++) {
+	numbers.push(i)
+}
+console.log(numbers);
+
+// pop() 方法用于删除并返回数组的最后一个元素
+var list = ["steak", "eggs"]
+var popped = list.pop()
+if (popped ==="eggs") {
+	console.log("Cool!");
+}
+
+var x = ["Dan", "Liz", "Alex"]
+for (var i = 1; i < 3; i++) {
+	var name = x[i]
+	console.log(name)
+}
+
+var matrix = [ [1, 1], [2, 2] ]
+var first = matrix[0][1]
+console.log(first);
+
+// forEach() 用于遍历数组，无返回值
+var L =["Eggs", "Milk", "Tea"]
+L.forEach(function(e, i, arr){
+	console.log(e)
+})
+
+// indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置
+var L = ["Eggs2", "Milk2", "Tea2"]
+console.log(L.indexOf("Milk2"))
+
+// slice() 方法可从已有的数组中返回选定的元素
+var L = ["Eggs3", "Milk3", "Tea3"]
+var slice = L.slice(0, 2)
+console.log(slice);
+
+// join() 方法用于把数组中的所有元素放入一个字符串。
+var L = ["Eggs4", "Milk4", "Tea4"]
+var joined = L.join()
+console.log(joined);
+
+// concat() 方法用于连接两个或多个数组
+var urList= ["Eggs5", "Milk5", "Tea5"]
+var theirList = ["Xxx"]
+var L = urList.concat(theirList)
+console.log(L);
+
+// map() 用于遍历数组，返回处理之后的新数组
+var L = [1, 2, 3]
+var x = L.map(function(item){
+	return item * 2
+})
+console.log(x);
+
+// reduce() 求数组项之和
+var L = [1, 2, 3]
+var x = L.reduce( function(a, b){
+	return a + b
+})
+console.log(x);
+
+// filter() 用于筛选数组中满足条件的元素，返回一个筛选后的新数组
+var L = [1, 2, 3]
+var fil = L.filter(function(val){
+	return val > 2
+})
+console.log(fil);
+
+// some() 用于判断数组中的是否存在满足条件的元素，返回一个布尔值
+var L =[1, 2, 3]
+var x = L.some(function(val){
+	return val > 3
+})
+console.log(x);
+
+
+// every() 用于判断数组中的每一项元素是否都满足条件，返回一个布尔值
+var L =[1, 2, 3]
+var x = L.every(function(val){
+	return val > 0
+})
+console.log(x);
+
+// shift() 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值
+var L = ["Milk6", "Eggs6", "Tea6"]
+var first = L.shift()
+console.log(first + " " + L);
+
+
+// unshift() 方法可向数组的开头添加一个或更多元素，并返回新的长度
+var L = ["Tea7", "Eggs7"]
+L.unshift("Beer7")
+console.log(L);
+
+// sort() 方法用于对数组的元素进行排序
+var L = ["Eggs8", "Beer8", "Tea8"]
+L.sort()
+console.log(L);
+
+// 将数字按大小排序
+var L = ["18", "9", "593", "-1", "-23", "0"]
+var X = function(a, b){
+	return a - b
+}
+L.sort(X)
+console.log(L);
+
+// splice() 方法从数组中定位并删除项目
+var L = ["milk9", "eggs9", "tea9"]
+L.splice(2,2)
+console.log(L);
+
+// reverse() 方法用于颠倒数组中元素的顺序
+var L = ["a","b","c", "d"]
+L.reverse()
+console.log(L);
+
+
+////// Objects
+
+var dog = {
+	name: "Sparky",
+	breed: "Geryhound",
+	age: 4
+}
+console.log("Meet " + dog.name + " " + dog.age);
+
+dog.bark = function(){
+	console.log("Arf!");
+}
+dog.bark()
+
+////// Objects II
+
+var meal = {
+	steak: "yes!",
+	tofu: "maybe"
+}
+console.log(meal.steak);
+
+// instanceof运算符是返回一个 Boolean 值，指出对象是否是特定类的一个实例
+function Dog(){
+	return "hi"
+}
+console.log(Dog instanceof Object);
+
+
+//
+function Dog(name){
+	this.name = name
+}
+var poodle = new Dog("Willa")
+console.log(poodle.name);
+
+//
+function Person(name) {
+	this.name = name
+	this.hello = function() {
+		console.log("Hi " + this.name);
+	}
+}
+var boy = new Person()
+boy.name = "Terry"
+boy.hello();
+
+var done = {
+	greeting: "Congrats!"
+}
+console.log(done.greeting);
+
+// 查看如下代码，日志输出为？
+function fun(n, o){
+	console.log(o);
+	return{
+		fun: function(m){
+			return fun(m, n)
+		}
+	}
+}
+var a = fun(1).fun(2).fun(4).fun(8);
+
+// 查看如下代码，fn()的值为？
+var User ={
+	count: 1,
+	getCount: function() {
+		return this.count
+	}
+}
+var fn = User.getCount
+console.log(fn());
+
+// 查看如下代码，日志输出为？
+function test() {
+	for(var i=0; i<5; i++) {
+		setTimeout(function() {
+			console.log(i)
+		}, 0)
+	}
+}
+test();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

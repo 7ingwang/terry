@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<title>底部滑出菜单</title>
+<style>
+html, body, ul, li{ margin: 0; padding: 0;}
+body{ text-align: center;}
+ul, list{ list-style: none;}
+.mask{ position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: #000; opacity: .5; z-index: 10; display: none;}
+.picker{ position: fixed; left: 0; right: 0; bottom: -50vh; height: 50vh; overflow-y: auto; background: #fff; z-index: 100; transition: all 0.2s ease; }
+.picker ul li{ height: 44px; line-height: 44px; border-bottom: 1px solid #eee; cursor: pointer;}
+.picker ul li:active{ background: #f8f8f8;
+	-webkit-user-select:none;
+     -moz-user-select:none;
+     -ms-user-select:none;
+     user-select:none;
+     }
+.picker.show{ bottom: 0; transition: all 0.2s ease;}
+.picker.show .picker-mask{ opacity: 1;}
+</style>
+</head>
+<body>
+<a href="javascript:;" class="weui_btn weui_btn_primary" id="showPicker">点我</a>
+<div class="mask"></div>
+<div class="picker slide-up" id="picker">
+	<ul>
+		<li>北京</li>
+		<li>上海</li>
+		<li>广州</li>
+		<li>深圳</li>
+		<li>西安</li>
+		<li>杭州</li>
+		<li>南京</li>
+		<li>海口</li>
+		<li>哈尔滨</li>
+		<li>兰州</li>
+		<li>拉萨</li>
+		<li>香港</li>
+		<li>澳门</li>
+		<li>成都</li>
+		<li>昆明</li>
+		<li>重庆</li>
+		<li>南宁</li>
+		<li>西王寨</li>
+	</ul>
+</div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#showPicker").click(function(){
+			$(".mask").show();
+			$("#picker").addClass("show");
+		})
+		
+		$("#picker li").click(function(){
+			$("#picker").removeClass("show");
+			$(".mask").hide();
+		})
+	});
+</script>
+</body>
+</html>
