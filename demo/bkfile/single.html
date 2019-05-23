@@ -35,6 +35,32 @@
 	</div>
 </div>
 
+<div class="bloc navbar">
+	<div class="container-fluid">
+		<ul class="nav">
+			  <li class="nav-item active">
+			    <a class="nav-link" href="#">Active</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Link</a>
+			  </li> 
+			  <li class="nav-item dropdown">
+			    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Link</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			        	<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link disabled" href="#">Disabled</a>
+			  </li>
+		</ul>
+	</div>
+</div>
+
+
 
 <div class="bloc" id="headbar">
 	<div class="container-fluid">
@@ -595,6 +621,18 @@
 	<script src="./js/lazysizes.min.js" defer></script>
 	<script src="./js/stickUp.min.js"></script>
 	<script src="./js/smoothScroll-ES5.js"></script>
+	<script>
+		$(function () {
+		    $(".dropdown").mouseover(function () {
+		        $(this).children(".dropdown-menu").addClass("show");
+		    });
+		
+		    $(".dropdown-menu").mouseleave(function(){
+		        $(this).removeClass("show");
+		    })
+		
+		})
+	</script>
 	<script type="text/javascript">
     	jQuery(function($){
 	        $(document).ready( function(){
