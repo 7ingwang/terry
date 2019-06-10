@@ -186,7 +186,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* header */
 .bloc-theme{ background: #30ADBE;}
 #header{ padding: 8px 0; font-size: 14px; color: #FFF; line-height: 34px; z-index: 101;}
-#header a{ color: #FFF; text-decoration: underline;}
+#header a{ display: inline-block;  color: #FFF; text-decoration: underline;}
 #header a:hover{ text-decoration: none; opacity: .8;}
 a#logo{ font-size: 20px; color: #FFF; font-weight: bold; text-decoration: none;}
 #header .form-inline{ position: relative; }
