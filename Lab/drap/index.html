@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<link href="http://cdn.bootcss.com/jqueryui/1.11.0/jquery-ui.min.css" rel="stylesheet">
+</head>
+<body>
+<style>
+	ul, li, input, textarea{ margin: 0; padding: 0;}
+	ul, li{ list-style: none;}
+	.content{ margin: 0 auto; width: 810px;}
+	.ui-sortable li{ margin-bottom: 20px; min-height: 44px; border-right: 30px solid #eee; cursor: move;}
+	.title input,
+	.ui-sortable li img,
+	.ui-sortable li textarea{ width: 100%; }
+	.title input,
+	.ui-sortable li textarea{ padding: 11px; border: 1px solid #ddd; box-sizing: border-box; font-size: 14px;}
+	.title input{ margin-bottom: 20px; min-height: 44px; font-size: 20px;}
+	.ui-sortable li textarea{ min-height: 88px; resize:none;}
+	.ui-sortable li img,
+	.ui-sortable li textarea{ position: relative; top: 2px;}
+</style>
+<div class="content">
+	<div class="title">
+		<input type="text" placeholder="在这里输入标题">
+	</div>
+	<ul id="sortable">
+	    <li>
+			<textarea placeholder="在这里输入段落内容"></textarea>
+	    </li>
+		  <li>
+		  	<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/190613/bmiddle-51dd2fc4b54ffb7c476cc677bdfa6ff35d7e67ad.png?x-oss-process=image/resize,w_800/" alt="" >
+	    </li>
+		<li>
+			<textarea placeholder="在这里输入段落内容"></textarea>
+	    </li>
+		<li>
+			<textarea placeholder="在这里输入段落内容"></textarea>
+	    </li>
+  	</ul>
+  	<div class="btns">
+		<button type="button" class="btn btn-primary btn-lg">保 存</button>
+		<button type="button" class="btn btn-secondary btn-lg">分 享</button>	  	
+  	</div>
+</div>
+<script src='jquery.min.js'></script>
+<script src="https://cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script>
+$(function() {  
+        $( "#sortable" ).sortable({   
+            placeholder: "ui-sortable-placeholder"   
+        });  
+    }); 
+</script>
+</body></html>
