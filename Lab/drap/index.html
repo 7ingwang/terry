@@ -6,19 +6,20 @@
 </head>
 <body>
 <style>
-	ul, li, input, textarea{ margin: 0; padding: 0;}
+	ul, li, input, textarea, img{ margin: 0; padding: 0;}
 	ul, li{ list-style: none;}
 	.content{ margin: 0 auto; width: 810px;}
-	.ui-sortable li{ margin-bottom: 20px; min-height: 44px; border-right: 30px solid #eee; cursor: move;}
+	.ui-sortable li{ position: relative; margin-bottom: 20px; min-height: 44px;  cursor: move;}
 	.title input,
 	.ui-sortable li img,
-	.ui-sortable li textarea{ width: 100%; }
+	.ui-sortable li textarea{ width: 100%;}
 	.title input,
 	.ui-sortable li textarea{ padding: 11px; border: 1px solid #ddd; box-sizing: border-box; font-size: 14px;}
 	.title input{ margin-bottom: 20px; min-height: 44px; font-size: 20px;}
-	.ui-sortable li textarea{ min-height: 88px; resize:none;}
-	.ui-sortable li img,
-	.ui-sortable li textarea{ position: relative; top: 2px;}
+	.ui-sortable li textarea{ min-height: 88px; border-spacing: 0;  resize:none;}
+	.ui-sortable li:after{ content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 30px; background: #000; opacity: .3; display: none;}
+	.ui-sortable li:hover:after{ display: block;}
+	.ui-sortable-helper { box-shadow: 3px 6px 9px 0 rgba(0,0,0,0.15);}
 </style>
 <div class="content">
 	<div class="title">
