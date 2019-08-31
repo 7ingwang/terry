@@ -1,19 +1,28 @@
-body{ padding-top: 90px; background: #246;}
+body{ padding-top: 90px; background: #246 url(img/inset-body@2x.png) no-repeat left bottom; background-size: auto 272px; background-attachment: fixed;}
+
+a:hover{ text-decoration: none; opacity: .8;}
 
 button{ background: none; border: none;}
 
+.container-fluid{}
 .navbar-fixed-top { border: 0; }
 .navbar-collapse{ padding: 0;}
+.dropdown-menu{ background: #fff; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15); border: none; border-radius: 3px;}
+.dropdown-menu>li>a{ padding: 6px 20px;}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{ background: none;}
 
 /* global */
-.container-fluid{}
-
+.text-grey{ color: #999;}
 .pipe{ margin: 0 10px;}
 
 /* header */
-.header{ margin-bottom: 0; padding: 20px; background: #fff; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);}
+.header{ margin-bottom: 0; padding: 5px 20px; background: #fff url(img/inset-header@2x.png) no-repeat right bottom; background-size: contain;}
+.header .navbar-brand{ display: inline-block; width: 249px; height: 80px; background: url(img/logo@2x.png) no-repeat center center; background-size: contain; text-indent: -100vw;}
+.header .navbar-right{ padding-top: 10px;}
 .header .navbar-right li{ text-align: right;}
 .header .navbar-right li a:hover{ background: none;}
+.header .navbar-right li .dropdown-menu{ min-width: inherit;}
+.header .navbar-right .avatar{ display: inline-block; margin-right: 10px; width: 36px; height: 36px;}
 @media (min-width: 768px) {
 .header{ min-height: 90px; }
 }
@@ -23,6 +32,8 @@ button{ background: none; border: none;}
 .sidebar .nav li a{ padding: 12px 20px; color: #DEDEDE;}
 .sidebar .nav li a .icon{ margin-right: 10px;}
 .sidebar .nav li a:hover, .sidebar .nav li.active a{ background-color: #125FB2; color: #fff;}
+.sidebar .nav li a.btn-menu:hover{ background: none;}
+
 @media (min-width: 768px) {
 .sidebar { position: fixed; top: 90px; bottom: 0;left: 0; z-index: 1000; display: block; width: 180px; overflow-x: hidden; overflow-y: auto;}
 }
@@ -30,7 +41,8 @@ button{ background: none; border: none;}
 
 /* main */
 
-.main { padding: 20px;}
+.main { padding: 20px; }
+.content{ min-height: 80vh;}
 @media (min-width: 768px) {
 .main { margin-left: 180px;}
 
@@ -39,8 +51,4 @@ button{ background: none; border: none;}
 
 /* footer */
 .footer{ color: #fff;}
-
-@media (min-width: 768px) {
-.header{ min-height: 90px; }
-
-}
+.footer a{ color: #fff;}
