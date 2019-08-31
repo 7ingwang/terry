@@ -15,6 +15,9 @@ button{ background: none; border: none;}
 .text-grey{ color: #999;}
 .pipe{ margin: 0 10px;}
 
+/* icon */
+.icon{ font-size: 16px;}
+
 /* header */
 .header{ margin-bottom: 0; padding: 5px 20px; background: #fff url(img/inset-header@2x.png) no-repeat right bottom; background-size: contain;}
 .header .navbar-brand{ display: inline-block; width: 249px; height: 80px; background: url(img/logo@2x.png) no-repeat center center; background-size: contain; text-indent: -100vw;}
@@ -29,10 +32,12 @@ button{ background: none; border: none;}
 
 /* sidebar */
 .sidebar{ padding: 20px 0;}
-.sidebar .nav li a{ padding: 12px 20px; color: #DEDEDE;}
-.sidebar .nav li a .icon{ margin-right: 10px;}
+.sidebar .nav li a{ position: relative; padding: 12px 10px 12px 20px; color: #DEDEDE;}
 .sidebar .nav li a:hover, .sidebar .nav li.active a{ background-color: #125FB2; color: #fff;}
+.sidebar .nav li a:after{ position: absolute; top: 17px; right: 10px; display: inline-block; font-family: 'icomoon'; content: "\e903"; font-size: 8px; opacity: .3;}
 .sidebar .nav li a.btn-menu:hover{ background: none;}
+.sidebar .nav li a.btn-menu:after{ display: none;}
+.sidebar .nav li a .icon{ margin-right: 10px;}
 
 @media (min-width: 768px) {
 .sidebar { position: fixed; top: 90px; bottom: 0;left: 0; z-index: 1000; display: block; width: 180px; overflow-x: hidden; overflow-y: auto;}
