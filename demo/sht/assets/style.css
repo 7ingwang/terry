@@ -1,6 +1,7 @@
 body{ padding-top: 90px; background: #246 url(img/inset-body@2x.png) no-repeat left bottom; background-size: auto 272px; background-attachment: fixed;}
 
 a:hover{ text-decoration: none; opacity: .8;}
+a:active{ outline: none;}
 
 button{ background: none; border: none;}
 
@@ -32,15 +33,24 @@ button{ background: none; border: none;}
 
 /* sidebar */
 .sidebar{ padding: 20px 0;}
-.sidebar .nav li a{ position: relative; padding: 12px 10px 12px 20px; color: #DEDEDE;}
-.sidebar .nav li a:hover, .sidebar .nav li.active a{ background-color: #125FB2; color: #fff;}
-.sidebar .nav li a:after{ position: absolute; top: 17px; right: 10px; display: inline-block; font-family: 'icomoon'; content: "\e903"; font-size: 8px; opacity: .3;}
-.sidebar .nav li a.btn-menu:hover{ background: none;}
-.sidebar .nav li a.btn-menu:after{ display: none;}
-.sidebar .nav li a .icon{ margin-right: 10px;}
+.site-nav-body{ display: block; height: 100%; overflow: visible;}
+.site-nav .nav-item{ position: relative;}
+.site-nav .nav-item a{ display: block; padding: 12px 10px 12px 20px; color: #DEDEDE;}
+.site-nav .nav-item a:hover, .sidebar .nav li.active a{ background-color: #125FB2; color: #fff;}
+.site-nav .nav-item .nav-item-title:after{ position: absolute; top: 17px; right: 10px; display: inline-block; font-family: 'icomoon'; content: "\e903"; font-size: 8px; opacity: .3;}
+.site-nav .nav-item .dropdown-menu{ position: absolute; top:0; left: 180px; margin: 0; padding: 0; min-width: 100%; background-color: #125FB2;}
+.site-nav .nav-item .dropdown-menu a{ display: block; padding-right: 12px;}
+.site-nav .nav-item .dropdown-menu a:hover{ background: #16579C;}
+.dropdown-submenu>a:after{ margin-right: inherit; opacity: .5;}
+
+
+.site-nav .nav-item .btn-menu:hover{ background: none;}
+.site-nav .nav-item .btn-menu:after{ display: none;}
+.site-nav .nav-item a .icon{ margin-right: 10px;}
+
 
 @media (min-width: 768px) {
-.sidebar { position: fixed; top: 90px; bottom: 0;left: 0; z-index: 1000; display: block; width: 180px; overflow-x: hidden; overflow-y: auto;}
+.sidebar{ position: fixed; top: 90px; bottom: 0;left: 0; z-index: 1000; display: block; width: 180px;}
 }
 
 
