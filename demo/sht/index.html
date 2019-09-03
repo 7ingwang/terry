@@ -26,7 +26,7 @@
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><img src="assets/img/avatar-default@2x.png" class="img-circle avatar"><b>tianyi</b> <span class="caret"></span></a>
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/img/avatar-default@2x.png" class="img-circle avatar"><b>tianyi</b> <span class="caret"></span></a>
 			<ul class="dropdown-menu">
 				<li><a href="#">个人中心</a></li>
 				<li><a href="#">账号设置</a></li>
@@ -44,7 +44,7 @@
 				<a href="#" class="btn-menu"><i class="icon icon-menu"></i></a>
 			</li>
 			<li class="nav-item dropdown">
-				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"><i class="icon icon-docs"></i><span class="text">文件管理</span></i></a>
+				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><i class="icon icon-docs"></i><span class="text">文件管理</span></i></a>
 				<ul class="sub-nav dropdown-menu">
 					<li class="sub-nav-item"><a href="#">一企一档</a></li>
 					<li class="sub-nav-item"><a href="#">国家法律法规</a></li>
@@ -53,10 +53,10 @@
 				</ul>
 			</li>
 			<li class="nav-item dropdown">
-				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"><i class="icon icon-bill"></i><span class="text">台账记录</span></a>
+				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><i class="icon icon-bill"></i><span class="text">台账记录</span></a>
 				<ul class="sub-nav dropdown-menu">
 					<li class="sub-nav-item dropdown-submenu">
-						<a href="#" class="sub-nav-item-title dropdown-toggle" data-toggle="dropdown">水点源</a>
+						<a href="#" class="sub-nav-item-title" data-toggle="dropdown">水点源</a>
 						<ul class="sub-nav dropdown-menu">
 							<li class="sub-nav-item"><a href="#">连续在线数据导入</a></li>
 							<li class="sub-nav-item"><a href="#">手工监测数据录入</a></li>
@@ -66,7 +66,7 @@
 						</ul>
 					</li>
 					<li class="sub-nav-item dropdown-submenu">
-						<a href="#" class="sub-nav-item-title dropdown-toggle" data-toggle="dropdown">空气固定源</a>
+						<a href="#" class="sub-nav-item-title" data-toggle="dropdown">空气固定源</a>
 						<ul class="sub-nav dropdown-menu">
 							<li class="sub-nav-item"><a href="#">连续在线数据导入</a></li>
 							<li class="sub-nav-item"><a href="#">手工监测数据录入</a></li>
@@ -79,7 +79,7 @@
 						</ul>
 					</li>
 					<li class="sub-nav-item dropdown-submenu">
-						<a href="#" class="sub-nav-item-title dropdown-toggle" data-toggle="dropdown">固废</a>
+						<a href="#" class="sub-nav-item-title" data-toggle="dropdown">固废</a>
 						<ul class="sub-nav dropdown-menu">
 							<li class="sub-nav-item"><a href="#">月度固废管理记录</a></li>
 							<li class="sub-nav-item"><a href="#">危险固废管理记录</a></li>
@@ -87,7 +87,7 @@
 						</ul>
 					</li>
 					<li class="sub-nav-item dropdown-submenu">
-						<a href="#" class="sub-nav-item-title dropdown-toggle" data-toggle="dropdown">设备设施管理</a>
+						<a href="#" class="sub-nav-item-title" data-toggle="dropdown">设备设施管理</a>
 						<ul class="sub-nav dropdown-menu">
 							<li class="sub-nav-item"><a href="#">排污口管理</a></li>
 							<li class="sub-nav-item"><a href="#">生产设备管理</a></li>
@@ -124,7 +124,7 @@
 				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-basic"></i><span class="text">基础管理</span></a>
 			</li>
 			<li class="nav-item dropdown">
-				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"><i class="icon icon-dashboard"></i><span class="text">系统监控</span></a>
+				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><i class="icon icon-dashboard"></i><span class="text">系统监控</span></a>
 				<ul class="sub-nav dropdown-menu">
 					<li class="sub-nav-item"><a href="#">在线任务</a></li>
 					<li class="sub-nav-item"><a href="#">系统日志</a></li>
@@ -132,7 +132,7 @@
 				</ul>
 			</li>
 			<li class="nav-item dropdown">
-				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"><i class="icon icon-tools"></i><span class="text">系统工具</span></a>
+				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><i class="icon icon-tools"></i><span class="text">系统工具</span></a>
 				<ul class="sub-nav dropdown-menu">
 					<li class="sub-nav-item"><a href="#">代码生成</a></li>
 					<li class="sub-nav-item"><a href="#">计划任务</a></li>
@@ -154,43 +154,31 @@
 <script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap-submenu/1.2.7/js/bootstrap-submenu.min.js"></script>
 <script src="assets/js/jquery.bootstrap-dropdown-hover.js"></script>
-<script type="text/javascript">
-	//$('[data-submenu]').submenupicker();
-	$(function() {
-		
-	  // Dropdown fix
-	  $('.dropdown > a[tabindex]').keydown(function(event) {
-	    // 13: Return
-
-	    if (event.keyCode == 13) {
-	      $(this).dropdown('toggle');
-	    }
-	  });
-
-
-	  $('.dropdown-submenu > a').submenupicker();
-	});
-</script>
 <script>
 	$(document).ready(function(){
+		
+// 		左侧边栏宽窄切换开关
 		$(".sidebar .btn-menu").click(function(){
 	    	$(".sidebar").toggleClass("slim");
 	    	$(".main").toggleClass("wide");
 		});
 		
+// 		菜单点击激活后的样式
 		$(".sidebar .nav li").not("li:first").click(function(){
 	    	$(this).addClass("active").siblings().removeClass("active");
 		});
 		
+// 		让最后三个下拉菜单向上打开
 	    $(".sidebar .nav .dropdown").slice(-3).addClass("dropup");
+	    
+// 		dropdown多级下拉菜单
+	    $('.dropdown-submenu > a').submenupicker();
+	    
+// 	    让下拉菜单鼠标hover时打开
+		$('.dropdown-toggle').bootstrapDropdownHover();
 	    	
 	});
 	
-	//让下拉菜单鼠标hover时打开
-		// $.fn.bootstrapDropdownHover();
-// 		$('.dropdown-toggle').bootstrapDropdownHover();
-
-
 </script>
 
 </body>

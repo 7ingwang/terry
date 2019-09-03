@@ -10,7 +10,11 @@ button{ background: none; border: none;}
 .navbar-collapse{ padding: 0;}
 .dropdown-menu{ background: #fff; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15); border: none; border-radius: 3px;}
 .dropdown-menu>li>a{ padding: 6px 20px;}
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{ background: none;}
+
+.nav>li>a:focus,
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover{ background: none;}
 
 /* global */
 .text-grey{ color: #999;}
@@ -40,13 +44,14 @@ button{ background: none; border: none;}
 .sidebar.slim .site-nav .nav-item .nav-item-title:after{ display: none;}
 .sidebar.slim .site-nav{ width: 100% !important;}
 .sidebar.slim .site-nav .nav-item .dropdown-menu{ position: absolute; left: 0; right: 0; width: 100%;}
+.sidebar.slim .site-nav .nav-item.open .dropdown-menu{ width: 100% !important}
 .sidebar.slim .site-nav .nav-item .dropdown-menu a{ display: block; }
 
 .site-nav-body{ display: block; height: 100%; overflow: visible;}
 
 .site-nav .nav-item{ position: relative;}
 .site-nav .nav-item a{ display: block; padding: 12px 10px 12px 20px; color: #DEDEDE;}
-.site-nav .nav-item a:hover, .sidebar .nav li.active a{ background-color: #125FB2; color: #fff;}
+.site-nav .nav-item a:hover, .site-nav .nav-item.dropdown.open a, .sidebar .nav li.active a{ background-color: #125FB2; color: #fff;}
 .site-nav .nav-item .nav-item-title:after{ position: absolute; top: 17px; right: 10px; display: inline-block; font-family: 'icomoon'; content: "\e903"; font-size: 8px; opacity: .3;}
 .site-nav .nav-item .dropdown-menu{ position: absolute; margin: 0; padding: 0; min-width: 100%; background-color: #125FB2;}
 .site-nav .nav-item .dropdown-menu a{ display: block; padding-right: 12px;}
