@@ -39,13 +39,6 @@ button{ background: none; border: none;}
 
 /* sidebar */
 .sidebar{ padding: 20px 0;}
-.sidebar.slim{ width: 56px; transform: all 0;}
-.sidebar.slim .site-nav .nav-item .nav-item-title .text,
-.sidebar.slim .site-nav .nav-item .nav-item-title:after{ display: none;}
-.sidebar.slim .site-nav{ width: 100% !important;}
-.sidebar.slim .site-nav .nav-item .dropdown-menu{ position: absolute; left: 0; right: 0; width: 100%;}
-.sidebar.slim .site-nav .nav-item.open .dropdown-menu{ width: 100% !important}
-.sidebar.slim .site-nav .nav-item .dropdown-menu a{ display: block; }
 
 .site-nav-body{ display: block; height: 100%; overflow: visible;}
 
@@ -53,7 +46,7 @@ button{ background: none; border: none;}
 .site-nav .nav-item a{ display: block; padding: 12px 10px 12px 20px; color: #DEDEDE;}
 .site-nav .nav-item a:hover, .site-nav .nav-item.dropdown.open a, .sidebar .nav li.active a{ background-color: #125FB2; color: #fff;}
 .site-nav .nav-item .nav-item-title:after{ position: absolute; top: 17px; right: 10px; display: inline-block; font-family: 'icomoon'; content: "\e903"; font-size: 8px; opacity: .3;}
-.site-nav .nav-item .dropdown-menu{ position: absolute; margin: 0; padding: 0; min-width: 100%; background-color: #125FB2;}
+.site-nav .nav-item .dropdown-menu{ position: absolute; margin: 0; padding: 0; width: 100%; background-color: #125FB2;}
 .site-nav .nav-item .dropdown-menu a{ display: block; padding-right: 12px;}
 .site-nav .nav-item .dropdown-menu .sub-nav-item a:before{ position: relative; top: -2px; left: 0; content: ""; display: inline-block; margin-right: 10px; width: 6px; height: 6px; border: 1px solid #fff; border-radius: 50%; opacity: .5;}
 .site-nav .nav-item .dropdown-menu .sub-nav-item a:hover:before{ opacity: 1;}
@@ -66,10 +59,18 @@ button{ background: none; border: none;}
 .site-nav .nav-item .btn-menu:after{ display: none;}
 .site-nav .nav-item a .icon{ margin-right: 10px;}
 
+.sidebar.slim{ width: 56px; }
+.sidebar.slim .site-nav .nav-item .nav-item-title .text,
+.sidebar.slim .site-nav .nav-item .nav-item-title:after{ display: none;}
+.sidebar.slim .site-nav{ width: 100% !important;}
+.sidebar.slim .site-nav .nav-item .dropdown-menu{ position: absolute; left: 0; right: 0; width: 100% !important;}
+.sidebar.slim .site-nav .nav-item.dropdown.open .dropdown-menu{ width: 100% !important}
+.sidebar.slim .site-nav .nav-item .dropdown-menu a{ display: block;  width: 100%;}
+.sidebar.slim .site-nav .nav-item .btn-menu .icon-menu:before{ content: "\e924";}
 
 @media (min-width: 768px) {
 .sidebar{ position: fixed; top: 90px; bottom: 0;left: 0; z-index: 1000; display: block; width: 180px;}
-.site-nav .nav-item .dropdown-menu{ top: 0; left: 180px;}
+.site-nav .nav-item .dropdown-menu{ top: 0; left: 180px; min-width: 100%; }
 
 .sidebar.slim .site-nav .nav-item .dropdown-menu{ left: 56px; min-width: 180px;}
 .sidebar.slim .site-nav .nav-item .dropdown-submenu .dropdown-menu{ left: 180px;}
