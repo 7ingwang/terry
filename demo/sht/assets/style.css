@@ -17,7 +17,7 @@ button{ background: none; border: none;}
 .checkbox input{ margin-right: 10px;}
 
 /* global */
-.container-fluid{ width: 1180px; max-width: none !important;}
+.container-fluid{ width: 1440px; max-width: none !important;}
 .navbar-fixed-top { border: 0; }
 .navbar-collapse{ padding: 0;}
 .dropdown-menu{ background: #fff; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15); border: none; border-radius: 3px;}
