@@ -1,11 +1,23 @@
-body{ padding-top: 90px; background: #246 url(img/inset-body@2x.png) no-repeat left bottom; background-size: auto 272px; background-attachment: fixed;}
+body{ padding-top: 90px; background: #246 url(img/inset-body@2x.png) no-repeat left bottom; background-size: auto 272px; background-attachment: fixed; line-height: 1.6;}
 
 a:hover{ text-decoration: none; opacity: .8;}
 a:active{ outline: none;}
 
+/* button */
 button{ background: none; border: none;}
+.btn:hover{ opacity: .8;}
+.btn-primary, .btn-primary:hover, .btn-primary:active{ background-color: #229853 !important; border-color: #229853 !important;}
 
-.container-fluid{}
+/* icon */
+.icon{ font-size: 16px;}
+
+/* form */
+.form-group{ margin-bottom: 20px;}
+.checkbox, radio{ margin-top: 0; margin-bottom: 0;}
+.checkbox input{ margin-right: 10px;}
+
+/* global */
+.container-fluid{ width: 1180px; max-width: none !important;}
 .navbar-fixed-top { border: 0; }
 .navbar-collapse{ padding: 0;}
 .dropdown-menu{ background: #fff; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15); border: none; border-radius: 3px;}
@@ -15,14 +27,8 @@ button{ background: none; border: none;}
 .nav .open>a,
 .nav .open>a:focus,
 .nav .open>a:hover{ background: none;}
-
-/* global */
 .text-grey{ color: #999;}
 .pipe{ margin: 0 10px;}
-
-
-/* icon */
-.icon{ font-size: 16px;}
 
 
 /* header */
@@ -92,3 +98,24 @@ button{ background: none; border: none;}
 /* footer */
 .footer{ color: #fff;}
 .footer a{ color: #fff;}
+
+
+/**** login ****/
+.login{ text-align: center; padding: 0; background-image: url(img/wallpaper.jpg); background-position: left top; background-size: cover;}
+.login #logo{ display: block; margin: 0 auto 20px; width: 100%; height: 50px; background: url(img/logo-login@2x.png) no-repeat center center; background-size: contain; text-indent: -200vw;}
+.login .slogan{ display: block; padding: 20px 0; color: #fff; font-weight: 300;}
+.login .slogan big+big{ margin-left: 40px;}
+.login .login-box{ padding: 20px 40px 40px; background: #246 url(img/inset@2x.png) no-repeat center bottom; background-size: contain; color: #fff; text-align: left;}
+.login .login-box .hi{ margin-bottom: 30px; font-weight: 300;}
+.login .login-box a{ color: #fff;}
+.login .login-box .copyright{ position: absolute; left: 0; right: 0; bottom: 10px; margin-top: 20px; width: 100%; text-align: center; font-size: 11px;}
+
+@media (min-width: 768px) {
+.login{ padding: 40px; text-align: left;}
+.login #logo{ display: inline-block; width: 320px; height: 100px;}
+.login .slogan{ position: absolute; left: 60px; bottom: 40px; font-size: 30px; }
+.login .login-box{ position: fixed; top: 0; right: 0; padding: 60px; width: 466px; height: 100vh; }
+.login .login-box .copyright{ bottom: 60px; font-size: 12px;}
+
+}
+
