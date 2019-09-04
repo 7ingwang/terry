@@ -1,7 +1,9 @@
 body{ padding-top: 90px; background: #246 url(img/inset-body@2x.png) no-repeat left bottom; background-size: auto 272px; background-attachment: fixed; line-height: 1.6;}
 
+a{ color: #3A89DD;}
 a:hover{ text-decoration: none; opacity: .8;}
 a:active{ outline: none;}
+ol, ul,li, dl, dt, dd{ margin: 0; padding: 0; list-style: none;}
 
 /* button */
 button{ background: none; border: none;}
@@ -35,8 +37,8 @@ button{ background: none; border: none;}
 .nav-tabs li .btn-link.btn-close{ position: absolute; right: 0; top: 0; padding: 10px;}
 .nav-tabs li .btn-link.btn-close .icon-close{ font-size: 12px;}
 .nav-tabs li.first{ padding-right: 15px; border-radius: 3px 0 0 0; overflow: hidden;}
-.nav-tabs li.last{ margin-right: 0; padding-right: 0; border-right: none; border-radius: 0 3px 0 0; overflow: hidden;}
-.nav-tabs li.last a{ padding-right: 15px;}
+.nav-tabs li.last{ margin-right: 0; padding-right: 0; border-right: none; border: 1px solid #fff; border-radius: 0 3px 0 0; }
+.nav-tabs li.last a{ padding-right: 15px; border: none; border-radius: 0 3px 0 0;}
 .nav-tabs li.last a,
 .nav-tabs li.last a:hover,
 .nav-tabs li.last.dropdown.open{ border-color: #fff;}
@@ -53,6 +55,15 @@ button{ background: none; border: none;}
 .nav .open>a:hover{ background: none;}
 .text-grey{ color: #999;}
 .pipe{ margin: 0 10px;}
+
+.panel{ padding: 20px; background: #fff; border-radius: 3px; border: none;}
+.panel-title{ margin-bottom: 20px; font-size: 16px;}
+.panel-body{ padding: 0;}
+.panel .list{ line-height: 2;}
+.panel .list p span{ display: block;}
+@media (min-width: 768px) {
+.panel .list li label{ display: inline-block; margin-right: 10px; min-width: 100px; text-align: right;}
+}
 
 
 /* header */
@@ -124,9 +135,6 @@ button{ background: none; border: none;}
 .footer a{ color: #fff;}
 
 
-.block{ padding: 0 20px 20px; background: #fff;}
-
-
 /**** login ****/
 .login{ text-align: center; padding: 0; background-image: url(img/wallpaper.jpg); background-position: left top; background-size: cover;}
 .login #logo{ display: block; margin: 0 auto 20px; width: 100%; height: 50px; background: url(img/logo-login@2x.png) no-repeat center center; background-size: contain; text-indent: -200vw;}
@@ -146,3 +154,16 @@ button{ background: none; border: none;}
 
 }
 
+
+/**** contact ****/
+.panel-contact{ border-radius: 0 0 3px 3px; background-image: url(img/inset-contact@2x.png); background-repeat: no-repeat; background-position: right center; background-size: auto 50%;}
+.panel-contact .panel-title{ font-size: 20px; color: #3A89DD;}
+.panel-contact .list li p{ color: #666;}
+@media (min-width: 768px) {
+.panel-contact{ padding: 50px 80px; min-height: 80vh; }
+.panel-contact .list li{ position: relative;}
+.panel-contact .list li label{ position: absolute; left: 0; top: 0;}
+.panel-contact .list li p{ padding-left: 110px; }
+.panel-contact .list li p span{ display: block;}
+.panel-contact .list li p span.qr-code{ position: relative; left: -7px;}	
+}
