@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="24px" viewBox="0 0 21 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>ltc</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="87.8769959%" y1="0.997019958%" x2="13.9777629%" y2="99.549267%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#A1A1A1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ltc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16.2030633,0 L13.869,9.955 L17.38351,8.67940848 L16.2030633,13.0205892 L12.869,14.222 L11.7404065,19.0357935 L20.8851375,19.0357935 L19.8180804,24 L1.72524826,24 L3.316,17.664 L-1.77635684e-15,18.8590434 L1.50585937,14.4462891 L4.387,13.399 L7.75216931,0 L16.2030633,0 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>

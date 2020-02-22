@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>pnt</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100.017656%" y1="0.997019958%" x2="2.43160626%" y2="99.549267%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#A1A1A1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="pnt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12" fill="url(#linearGradient-1)">
+            <path d="M14,0 C21.7319865,0 28,6.2680135 28,14 C28,21.7319865 21.7319865,28 14,28 C6.2680135,28 0,21.7319865 0,14 C0,6.2680135 6.2680135,0 14,0 Z M7.026,10.146 L3.77,10.146 L3.77,18 L5.057,18 L5.057,14.986 L7.004,14.986 C8.918,14.986 9.875,14.172 9.875,12.555 C9.875,10.949 8.918,10.146 7.026,10.146 Z M12.471,10.146 L11.184,10.146 L11.184,18 L12.471,18 L12.471,12.258 L12.515,12.258 L16.442,18 L17.696,18 L17.696,10.146 L16.398,10.146 L16.398,15.811 L16.354,15.811 L12.471,10.146 Z M25.275,10.146 L18.84,10.146 L18.84,11.246 L21.414,11.246 L21.414,18 L22.701,18 L22.701,11.246 L25.275,11.246 L25.275,10.146 Z M6.927,11.246 C7.488,11.246 7.906,11.345 8.17,11.554 C8.434,11.752 8.577,12.082 8.577,12.555 C8.577,13.028 8.445,13.369 8.181,13.578 C7.917,13.776 7.499,13.886 6.927,13.886 L5.057,13.886 L5.057,11.246 L6.927,11.246 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

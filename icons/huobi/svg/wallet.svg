@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>wallet</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wallet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16">
+            <path d="M2.9656696,5.00451968 C2.9656696,3.34766543 4.30881535,2.00451968 5.9656696,2.00451968 L13.9656696,2.00451968 C15.6225238,2.00451968 16.9656696,3.34766543 16.9656696,5.00451968 L16.9038158,8.7392347" id="Rectangle-10" fill="#36CEEC" transform="translate(9.965670, 5.371877) rotate(-15.000000) translate(-9.965670, -5.371877) "></path>
+            <path d="M3,6 L3.92626953,6 L3.92626953,6 L18,6 C19.6568542,6 21,7.34314575 21,9 L21,19 C21,20.6568542 19.6568542,22 18,22 L3,22 C1.34314575,22 2.02906125e-16,20.6568542 0,19 L0,9 C-2.02906125e-16,7.34314575 1.34314575,6 3,6 Z" id="Rectangle-6" fill="#206CDB"></path>
+            <path d="M22,11 L22,17 L18,17 C16.3431458,17 15,15.6568542 15,14 C15,12.3431458 16.3431458,11 18,11 L22,11 Z M18,13 C17.4477153,13 17,13.4477153 17,14 C17,14.5522847 17.4477153,15 18,15 C18.5522847,15 19,14.5522847 19,14 C19,13.4477153 18.5522847,13 18,13 Z" id="Combined-Shape" fill="#36CEEC"></path>
+        </g>
+    </g>
+</svg>

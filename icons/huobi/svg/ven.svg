@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="21px" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>ven</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100.017656%" y1="12.4820934%" x2="2.43160626%" y2="87.9361576%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#A1A1A1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ven" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9.35384615,20.2782077 C8,18.5940257 0,2.29354953 0,1.15071172 C0,0.00787391044 0.307692308,-0.112424806 2.95384615,0.0680232689 L5.84615385,0.248471344 L9.29230769,6.86490077 C11.2,10.4738623 13.0461538,13.4813302 13.2923077,13.6016289 C13.6,13.6617783 15.3846154,10.7144597 17.2923077,6.98519949 C20.3076923,1.21086108 21.0461538,0.248471344 22.4,0.0680232689 C23.5692308,-0.052275448 24,0.128172627 24,0.849964928 C24,1.39130915 21.7846154,6.14310847 19.0153846,11.436252 C14.1538462,20.8797013 14.0307692,21 12.0615385,21 C10.8923077,21 9.72307692,20.6391038 9.35384615,20.2782077 Z" id="Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>

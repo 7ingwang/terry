@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>bat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100.017656%" y1="4.99552701%" x2="2.43160626%" y2="95.5061845%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#A1A1A1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="bat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10.8231926,0 L24,23 L16.4581246,22.9308271 L0,19.0571429 L10.8231926,0 Z M10.7544739,7.74736842 L6.39083751,15.3045113 L15.2383679,15.3045113 L10.7544739,7.74736842 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>
