@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>classList</title>
+<style>
+.dark{ background-color: black; transition: all 1s ease;}
+.box-style1{ min-height: 10vh; background: white;}
+.box-style2{ min-height: 20vh; background: grey;}
+</style>
+</head>
+<body>
+<button onclick="myFunction()">点我</button>
+<div id="box"></div>
+<div class="box"></div>
+<script>
+function myFunction() {
+		document.getElementsByTagName("body")[0].classList.toggle("dark");
+		document.getElementById("box").classList.toggle("box-style1");
+    document.getElementsByClassName("box")[0].classList.toggle("box-style2");
+}
+</script>
+
+</body>
+</html>
