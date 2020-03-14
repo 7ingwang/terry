@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="100px" viewBox="0 0 52 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>flip-prev</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3edata_home_slices" transform="translate(-70.000000, -372.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M70.9393398,372.93934 C71.4885146,372.390165 72.357577,372.355842 72.9467378,372.83637 L73.0606602,372.93934 L121.06066,420.93934 C121.609835,421.488515 121.644158,422.357577 121.16363,422.946738 L121.06066,423.06066 L73.0606602,471.06066 C72.4748737,471.646447 71.5251263,471.646447 70.9393398,471.06066 C70.390165,470.511485 70.3558416,469.642423 70.8363696,469.053262 L70.9393398,468.93934 L117.879,422 L70.9393398,375.06066 C70.390165,374.511485 70.3558416,373.642423 70.8363696,373.053262 L70.9393398,372.93934 Z" id="flip-prev" transform="translate(96.000000, 422.000000) scale(-1, 1) translate(-96.000000, -422.000000) "></path>
+        </g>
+    </g>
+</svg>
