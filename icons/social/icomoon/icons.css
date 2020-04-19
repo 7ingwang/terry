@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?1wtflm');
-  src:  url('fonts/icomoon.eot?1wtflm#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?1wtflm') format('truetype'),
-    url('fonts/icomoon.woff?1wtflm') format('woff'),
-    url('fonts/icomoon.svg?1wtflm#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?9ydepw');
+  src:  url('fonts/icomoon.eot?9ydepw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9ydepw') format('truetype'),
+    url('fonts/icomoon.woff?9ydepw') format('woff'),
+    url('fonts/icomoon.svg?9ydepw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-px500-solid:before {
+  content: "\e901";
+}
+.icon-px500:before {
+  content: "\e906";
+}
 .icon-github-solid:before {
   content: "\e905";
-}
-.icon-px500-solid:before {
-  content: "\e906";
 }
 .icon-mail-solid:before {
   content: "\e907";
@@ -42,9 +45,6 @@
 }
 .icon-github:before {
   content: "\e900";
-}
-.icon-px500:before {
-  content: "\e901";
 }
 .icon-mail:before {
   content: "\e902";
