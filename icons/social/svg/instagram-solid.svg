@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>instagram-solid</title>
+    <desc>Created with Sketch.</desc>
+    <g id="instagram-solid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M126,0 C155.823376,-5.47846538e-15 180,24.1766235 180,54 L180,126 C180,155.823376 155.823376,180 126,180 L54,180 C24.1766235,180 3.65231026e-15,155.823376 0,126 L0,54 C-3.65231026e-15,24.1766235 24.1766235,5.47846538e-15 54,0 L126,0 Z M90.5,53 C69.7893219,53 53,69.7893219 53,90.5 C53,111.210678 69.7893219,128 90.5,128 C111.210678,128 128,111.210678 128,90.5 C128,69.7893219 111.210678,53 90.5,53 Z M143,23 C134.715729,23 128,29.7157288 128,38 C128,46.2842712 134.715729,53 143,53 C151.284271,53 158,46.2842712 158,38 C158,29.7157288 151.284271,23 143,23 Z" id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>
