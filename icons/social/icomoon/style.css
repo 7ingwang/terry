@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9ydepw');
-  src:  url('fonts/icomoon.eot?9ydepw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9ydepw') format('truetype'),
-    url('fonts/icomoon.woff?9ydepw') format('woff'),
-    url('fonts/icomoon.svg?9ydepw#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6v7j4t');
+  src:  url('fonts/icomoon.eot?6v7j4t#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6v7j4t') format('truetype'),
+    url('fonts/icomoon.woff?6v7j4t') format('woff'),
+    url('fonts/icomoon.svg?6v7j4t#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-px500-solid:before {
-  content: "\e901";
-}
 .icon-px500:before {
   content: "\e906";
+}
+.icon-px500-solid .path1:before {
+  content: "\e909";
+  color: rgb(0, 0, 0);
+}
+.icon-px500-solid .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-wechat:before {
+  content: "\e901";
+}
+.icon-wechat-solid:before {
+  content: "\e904";
 }
 .icon-github-solid:before {
   content: "\e905";
@@ -40,9 +52,6 @@
 .icon-instagram-solid:before {
   content: "\e908";
 }
-.icon-wechat-solid:before {
-  content: "\e909";
-}
 .icon-github:before {
   content: "\e900";
 }
@@ -51,7 +60,4 @@
 }
 .icon-instagram:before {
   content: "\e903";
-}
-.icon-wechat:before {
-  content: "\e904";
 }
