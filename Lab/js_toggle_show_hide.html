@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生js toggle切换</title>
+</head>
+<body>
+<br><br><br>
+<a href="javascript:void(0)" onclick="btn_toggle();">点击切换</a>
+<div id="box" class="hide">展现隐藏内容</div>
+<style>
+	body{ text-align: center;}
+	#box{}
+    .show{ display: block;}
+    .hide{ display: none;}
+</style>
+<script type="text/javascript">
+    function btn_toggle(){
+        var sh = document.getElementById('box').classList.contains('show');
+        if(sh){
+            document.getElementById('box').classList.remove('show');
+            document.getElementById('box').classList.add('hide');
+        }else{
+            document.getElementById('box').classList.remove('hide');
+            document.getElementById('box').classList.add('show');
+        }
+    }
+</script>
+</body>
+</html>
