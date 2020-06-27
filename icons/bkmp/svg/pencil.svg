@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pencil</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.486275 0 0 0 0 0.803922 0 0 0 0 0.717647 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-222.000000, -695.000000)" fill="#7CCDB7">
+            <g id="Group-13" transform="translate(28.000000, 673.000000)">
+                <g filter="url(#filter-1)" id="pencil">
+                    <g transform="translate(194.000000, 22.000000)">
+                        <path d="M1.69582772,10.2325581 L2.76702558,11.4203887 L2.22153433,15.2214467 C3.29726467,14.9135528 4.43815278,15.2639661 5.2235138,16.143477 C6.00887481,17.0229879 6.32238876,18.3013319 6.04845222,19.5071395 L6.04845222,19.5071395 L9.42314941,18.9053053 L10.5,20.099471 L1.14097896e-13,22 L1.69582772,10.2325581 Z M17.2979552,9.72093023 L20,12.6202651 L13.6991237,19.3885177 L13.7487829,19.4418605 L11.0496592,19.4418605 L11.0496592,16.5425255 L11,16.4891828 L17.2979552,9.72093023 Z M12.8,5.11627907 L15.5,8.02972038 L9.19999999,14.8372093 L6.5,14.8372093 L6.5,11.923768 L12.8,5.11627907 Z M8.30087635,0 L11,2.91533253 L4.69912365,9.72093023 L2,9.72093023 L2,6.80559771 L8.30087635,0 Z" id="Combined-Shape" fill="#89CDEB" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
