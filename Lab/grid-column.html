@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<title>grid-column</title>
+<style>
+	body{ display: grid; grid-gap: 8px;}
+	header, aside, main, footer{ background: #eee; height: 80px;}
+	header, footer{ grid-column: 1 / span 6;}
+	main{ grid-column: 2 / span 5;}
+</style>
+</head>
+<body>
+<header>header</header>
+<aside>aside</aside>
+<main>main</main>
+<footer>footer</footer>
+<script>
+</script>
+</body>
+</html>
